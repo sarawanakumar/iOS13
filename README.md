@@ -12,7 +12,7 @@ tableView.beginUpdates()
 tableView.insertRows(at: [IndexPath], options: .automatic)
 tableView.endUpdates()
 
-    to update the tableview and before that, we have to ensure to set appropriate datasource for the updation we intend to perform. This is tedious as the number of inserts/updates/deletes grow.
+   to update the tableview and before that, we have to ensure to set appropriate datasource for the updation we intend to perform. This is tedious as the number of inserts/updates/deletes grow.
  
   ### Idea
   UITable Diffable datasource helps us manage the datasource with the help of snapshot. Which acts as single source of truth between our view and datasource.
