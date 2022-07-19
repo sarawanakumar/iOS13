@@ -30,3 +30,6 @@ tableView.endUpdates()
 - When we're importing static library to an app, it is unnecessary to embed it, because, the static library's code would already have been compiled along with original app's source code and the app executable contains the code of static library as well.
 - When we're importing dynamic library to an app, it is essentila to choose `embed` otherwise at runtime, when the library is getting accessed from the app, the linker won't find it and crash the app.
 - If the framework you add is already signed, we can choose, embed but don't sign. Otherwise `embed and sign`.
+
+## Appdelegate UIWindow tip:
+- It is important to understand that every time the window's root view controller is changed/modified, we should ensure that `window.makeKeyAndVisible()` is being called. If not the window will go black as you update the view controller.
